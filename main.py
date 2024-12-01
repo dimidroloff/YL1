@@ -21,7 +21,8 @@ class MyWidget(QMainWindow):
         qp = QPainter()
         qp.begin(self)
         qp.setBrush(QColor(253, 233, 16))
-        qp.drawEllipse(QPointF(250, 210), random.randint(20, 200), random.randint(20, 200))
+        rad = random.randint(20, 200)
+        qp.drawEllipse(QPointF(250, 210), rad, rad)
         qp.end()
 
 
